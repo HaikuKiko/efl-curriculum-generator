@@ -71,7 +71,7 @@ Notes:
   the doc, not yet checked.
 - **Kahoot:** there is an official Kahoot! connector for Claude (connect it at
   claude.ai/customize/connectors, then start a new session); with it, quizzes
-  can be created directly. Without it, Each
+  can be created directly. Without it, each
   quiz is a table matching Kahoot's spreadsheet import template
   (question, answers 1–4, time limit, correct answer number). Import via
   *Add → Import spreadsheet* in the Kahoot editor
