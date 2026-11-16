@@ -69,7 +69,9 @@ Notes:
   A2 script, written as a one-voice message so teachers can read it aloud or
   use Word's Read Aloud instead of recording a dialogue. Two YouTube links from an ESL Printables Brighton worksheet are in
   the doc, not yet checked.
-- **Kahoot:** quizzes can't be created in a Kahoot account from here. Each
+- **Kahoot:** there is an official Kahoot! connector for Claude (connect it at
+  claude.ai/customize/connectors, then start a new session); with it, quizzes
+  can be created directly. Without it, Each
   quiz is a table matching Kahoot's spreadsheet import template
   (question, answers 1–4, time limit, correct answer number). Import via
   *Add → Import spreadsheet* in the Kahoot editor
@@ -99,8 +101,8 @@ Notes:
 
 ## Open items
 
-- [ ] Create the GitHub repo `gjball/efl-curriculum-generator` (empty) and
-      push this project.
+- [x] Create the GitHub repo and push this project
+      (`HaikuKiko/efl-curriculum-generator`).
 - [ ] Connect the repo to Vercel.
 - [ ] Confirm how many skills lessons there are per day (assumed 2 × 45 min).
 - [ ] Decide what the generator outputs: lesson pack doc, Word export in the
