@@ -58,7 +58,7 @@ It's a model of what the generator should eventually produce.
 | --- | --- | --- | --- |
 | Tue | Find someone who + Brighton true/false (S) | My first week: interview and report (S) | 1 Brighton basics |
 | Wed | Writing: a postcard from Brighton (R)(W) | Postcard gallery (R)(S) | 2 English culture |
-| Thu | Map info gap and directions (S)(L); overflow for writing | Tourist/local recommendation role-play (S) | 3 Places in Brighton |
+| Thu | Guess the place + big-screen directions (S)(L); overflow for writing | Tourist/local recommendation role-play (S) | 3 Places in Brighton |
 | Fri | Listening: *A Saturday in Brighton* (L)(S) | Brighton bingo + Just a minute (S) | 4 Saturday in Brighton |
 | Mon | "Is it true in your country?" four corners (S) | Brighton board game: grammar review (S) | 5 Big week review |
 
@@ -66,7 +66,8 @@ Notes:
 
 - **Listening:** the listening sites (ESL Printables, Test-English, elllo,
   YouTube) are blocked from the cloud session, so the lesson uses an original
-  A2 script. Two YouTube links from an ESL Printables Brighton worksheet are in
+  A2 script, written as a one-voice message so teachers can read it aloud or
+  use Word's Read Aloud instead of recording a dialogue. Two YouTube links from an ESL Printables Brighton worksheet are in
   the doc, not yet checked.
 - **Kahoot:** quizzes can't be created in a Kahoot account from here. Each
   quiz is a table matching Kahoot's spreadsheet import template
@@ -106,3 +107,13 @@ Notes:
       school's scheme-of-work layout, Kahoot spreadsheets, or all three.
 - [ ] Decide whether the generator uses AI (e.g. Claude) to write texts and
       quizzes, and where the API key lives.
+
+## Low-prep principle
+
+The materials are for other teachers, so prep must be close to zero:
+
+- nothing to cut out or alter by hand (the printed map info gap was replaced
+  with a projected Google Maps activity);
+- nothing to record (listening is a one-speaker text, read aloud or played
+  with Word's Read Aloud);
+- quizzes are set up once and shared by link.
