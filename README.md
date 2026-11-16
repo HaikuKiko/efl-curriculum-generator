@@ -27,3 +27,4 @@ npm run typecheck
 - `src/app/` — the pages (Expo Router: every file is a screen).
 - `src/components/`, `src/hooks/`, `src/constants/` — shared code.
 - `vercel.json` — builds and publishes the web version on Vercel.
+- `docs/PROJECT_NOTES.md` — what has been done so far, decisions and open items.
