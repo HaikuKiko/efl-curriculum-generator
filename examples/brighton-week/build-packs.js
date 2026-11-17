@@ -166,11 +166,11 @@ const landscape = { page: { size: { width: A4_W, height: A4_H, orientation: Page
 // ================= BRIGHTON WEEK: LEVEL CONTENT =================
 // Course 2 = A1, Course 3 = A2+. Shared: secret places, directions, Kahoots.
 const KAHOOTS = [
-  ['Day 1', 'Brighton basics', '739bef19-5282-47db-9c2d-305e02e691e5'],
-  ['Day 2', 'English culture', '7d6971c3-87f7-42f0-8808-e6dd0b2d4467'],
-  ['Day 3', 'Places in Brighton', '75dc390b-2070-49ef-965b-2cafad5249b4'],
-  ['Day 4', 'A Saturday in Brighton', '190ddd16-7748-4bfc-a4ab-1f8f8a6b5771'],
-  ['Day 5', 'Big week review', '2a9b54b3-568b-46df-8316-0f868e6fe796'],
+  ['Day 1 (Mon)', 'Brighton basics', '739bef19-5282-47db-9c2d-305e02e691e5'],
+  ['Day 2 (Tue)', 'English culture', '7d6971c3-87f7-42f0-8808-e6dd0b2d4467'],
+  ['Day 3 (Wed)', 'Places in Brighton', '75dc390b-2070-49ef-965b-2cafad5249b4'],
+  ['Day 4 (Thu)', 'A Saturday in Brighton', '190ddd16-7748-4bfc-a4ab-1f8f8a6b5771'],
+  ['Day 5 (Fri)', 'Big week review', '2a9b54b3-568b-46df-8316-0f868e6fe796'],
 ];
 const PLACES = [`The Royal Pavilion`, `Palace Pier`, `the i360`, `the Lanes`, `North Laine`, `the Clock Tower`,
   `Churchill Square`, `Brighton station`, `the Sea Life Centre`, `the West Pier`, `Brighton Marina`, `the beach`];
@@ -179,7 +179,7 @@ const CORNERS = ['AGREE', 'DISAGREE', 'NOT SURE', "IT'S THE SAME IN MY COUNTRY"]
 
 const LEVELS = {
   c2: {
-    course: 'Course 2', level: 'A1', file: 'Course 2 (A1)',
+    course: 'Course 2', level: 'A1', dir: 'course-2-A1', file: 'Course 2 (A1)',
     grammar: `*be*, present simple, *can / can’t*, *there is / there are*, past simple (common verbs), *want to*`,
     fswIntro: `Ask *"Do you...?"*, *"Can you...?"* or *"Did you...?"*. Write a name. Then ask one more question: *Where? When? Who with?*`,
     fsw: [`likes fish and chips`, `lives in Hove`, `takes the bus to school`, `can swim`, `went to the beach this week`,
@@ -262,7 +262,7 @@ const LEVELS = {
   },
 
   c3: {
-    course: 'Course 3', level: 'A2+', file: 'Course 3 (A2+)',
+    course: 'Course 3', level: 'A2+', dir: 'course-3-A2-plus', file: 'Course 3 (A2+)',
     grammar: `present perfect (*ever / never / for / since*), past simple and past continuous, comparatives and superlatives, *going to* and *will*, *should*, first and second conditional`,
     fswIntro: `Ask *"Have you ever...?"*, *"Were you...?"* or *"Would you...?"*. Write a name, then ask two follow-up questions: *When? Why? What was it like?*`,
     fsw: [`has been on Palace Pier`, `has swum in the sea in Brighton`, `has tried a Sunday roast`, `has been inside the Royal Pavilion`,
@@ -374,18 +374,18 @@ function studentPack(L) {
   s.push(P(`**${L.course} (${L.level}).** Print one copy per student unless the table says otherwise.`));
   s.push(table([
     ['Page', 'Worksheet', 'Day', 'Copies'],
-    ['2', 'Find someone who...', 'Day 1', '1 per student'],
-    ['3', 'Brighton: true or false?', 'Day 1', '1 per team'],
-    ['4', 'My first week: interview', 'Day 1', '1 per student'],
-    ['5', `${W.title} (model)`, 'Day 2', '1 per student'],
-    ['6', `My ${W.genre} (writing frame)`, 'Day 2', '1 per student'],
-    ['7', 'Secret places (or show on screen)', 'Day 3', '1 per pair'],
-    ['8', 'Tourist role cards (cut up)', 'Day 3', '1 set per 6 students'],
-    ['9', 'Listening: A Saturday in Brighton', 'Day 4', '1 per student'],
-    ['10', 'Brighton bingo', 'Day 4', '1 per 2 students (cut in half)'],
-    ['11', 'Just a minute topic cards (cut up)', 'Day 4', '1 set per group'],
-    ['12–15', 'Four corners signs', 'Day 5', '1 set for the room'],
-    ['16', 'Brighton board game (A4, or enlarge to A3)', 'Day 5', '1 per group'],
+    ['2', 'Find someone who...', 'Day 1 (Mon)', '1 per student'],
+    ['3', 'Brighton: true or false?', 'Day 1 (Mon)', '1 per team'],
+    ['4', 'My first week: interview', 'Day 1 (Mon)', '1 per student'],
+    ['5', `${W.title} (model)`, 'Day 2 (Tue)', '1 per student'],
+    ['6', `My ${W.genre} (writing frame)`, 'Day 2 (Tue)', '1 per student'],
+    ['7', 'Secret places (or show on screen)', 'Day 3 (Wed)', '1 per pair'],
+    ['8', 'Tourist role cards (cut up)', 'Day 3 (Wed)', '1 set per 6 students'],
+    ['9', 'Listening: A Saturday in Brighton', 'Day 4 (Thu)', '1 per student'],
+    ['10', 'Brighton bingo', 'Day 4 (Thu)', '1 per 2 students (cut in half)'],
+    ['11', 'Just a minute topic cards (cut up)', 'Day 4 (Thu)', '1 set per group'],
+    ['12–15', 'Four corners signs', 'Day 5 (Fri)', '1 set for the room'],
+    ['16', 'Brighton board game (A4, or enlarge to A3)', 'Day 5 (Fri)', '1 per group'],
   ], [1100, 4900, 1100, 2806], { header: true }));
 
   s.push(H1('Find someone who...'));
@@ -508,16 +508,16 @@ function teacherPack(L) {
   const t = [];
   const W = L.writing, LS = L.listening;
   t.push(new Paragraph({ heading: 'Heading1', children: [new TextRun(`Brighton Skills Week: Teacher pack`)] }));
-  t.push(P(`**${L.course} (${L.level})** · **Length:** five days, one 90-minute skills lesson a day, taught as two halves · **Grammar review:** ${L.grammar}.`));
+  t.push(P(`**${L.course} (${L.level})** · **Length:** Monday to Friday, one 90-minute skills lesson a day, taught as two halves · **Grammar review:** ${L.grammar}.`));
   t.push(P(`Mostly structured speaking, plus one writing lesson (Day 2), one listening lesson (Day 4) and a Kahoot every day. Student worksheets are in the separate student pack. The other course has its own pack with the same plan at a different level; the Kahoots are shared.`));
   t.push(H2('The week at a glance'));
   t.push(table([
     ['Day', 'First half', 'Second half', 'Kahoot'],
-    ['Day 1', 'Find someone who + Brighton true or false (S)', 'My first week: interview and report back (S)', 'Brighton basics'],
-    ['Day 2', `Writing: ${W.title.toLowerCase()} (R)(W)`, `${W.genre === 'postcard' ? 'Postcard' : 'Email'} gallery (R)(S)`, 'English culture'],
-    ['Day 3', 'Guess the place + big-screen directions (S)(L). Overflow for writing', 'Recommend a place: tourist and local role-play (S)', 'Places in Brighton'],
-    ['Day 4', 'Listening: A Saturday in Brighton (L)(S)', 'Brighton bingo + Just a minute (S)', 'A Saturday in Brighton'],
-    ['Day 5', '"Is it true in your country?" four corners (S)', 'Brighton board game: grammar review (S)', 'Big week review'],
+    ['Day 1 (Mon)', 'Find someone who + Brighton true or false (S)', 'My first week: interview and report back (S)', 'Brighton basics'],
+    ['Day 2 (Tue)', `Writing: ${W.title.toLowerCase()} (R)(W)`, `${W.genre === 'postcard' ? 'Postcard' : 'Email'} gallery (R)(S)`, 'English culture'],
+    ['Day 3 (Wed)', 'Guess the place + big-screen directions (S)(L). Overflow for writing', 'Recommend a place: tourist and local role-play (S)', 'Places in Brighton'],
+    ['Day 4 (Thu)', 'Listening: A Saturday in Brighton (L)(S)', 'Brighton bingo + Just a minute (S)', 'A Saturday in Brighton'],
+    ['Day 5 (Fri)', '"Is it true in your country?" four corners (S)', 'Brighton board game: grammar review (S)', 'Big week review'],
   ], [900, 3600, 3400, 2006], { header: true }));
   t.push(H2('Kahoots (shared by both courses)'));
   t.push(P('These links open each kahoot’s page, where you press **Start** to host it or **Duplicate** to copy it into your own account. They work once the kahoots are set to public.'));
@@ -525,7 +525,7 @@ function teacherPack(L) {
     width: { size: PORTRAIT_W, type: WidthType.DXA }, columnWidths: [1200, 3400, 5306],
     rows: [
       new TableRow({ tableHeader: true, children: ['Day', 'Kahoot', 'Link'].map((h, i) => cell(h, [1200, 3400, 5306][i], { fill: PURPLE, run: { bold: true, color: 'FFFFFF' } })) }),
-      ...KAHOOTS.map(([d, n, u]) => new TableRow({ children: [cell(d, 1200), cell(`Brighton ${d}: ${n}`, 3400), cell([new Paragraph({ children: [new ExternalHyperlink({ link: `https://create.kahoot.it/details/${u}`, children: [new TextRun({ text: 'Open the kahoot', style: 'Hyperlink' })] })] })], 5306)] })),
+      ...KAHOOTS.map(([d, n, u]) => new TableRow({ children: [cell(d, 1200), cell(`Brighton ${d.replace(/ \(.*\)/, '')}: ${n}`, 3400), cell([new Paragraph({ children: [new ExternalHyperlink({ link: `https://create.kahoot.it/details/${u}`, children: [new TextRun({ text: 'Open the kahoot', style: 'Hyperlink' })] })] })], 5306)] })),
     ],
   }));
   t.push(H2('Prep checklist'));
@@ -546,7 +546,7 @@ function teacherPack(L) {
     });
   };
   const a1 = L.level === 'A1';
-  day('Day 1: Welcome to Brighton', 'Students find out what they already know about Brighton and talk about their first days here.', [
+  day('Day 1 (Monday): Welcome to Brighton', 'Students find out what they already know about Brighton and talk about their first days here.', [
     ['First half: Find someone who + Brighton true or false (S)', a1 ? 'simple questions and answers about life in Brighton.' : 'questions with the present perfect and follow-up questions.', [
       '**Kahoot: Brighton basics (10 min).** Run it cold as a warmer. Note which facts surprise them.',
       `**Find someone who (15 min).** Students mingle and ask the questions. ${a1 ? 'Drill the question forms first: *Do you...? Can you...? Did you...?*' : 'Insist on two follow-up questions each time.'}`,
@@ -562,7 +562,7 @@ function teacherPack(L) {
       '**Error clinic (5 min).** Board 5 errors you heard (no names). Teams correct them.',
     ]],
   ]);
-  day(`Day 2: ${W.title}`, `Students write a ${W.words} word ${W.genre} home, then read each other’s and guess the writer. If you run out of time, finish the writing in Day 3’s first half and do the gallery straight after; move Day 3’s places lesson to Day 4’s second half.`, [
+  day(`Day 2 (Tuesday): ${W.title}`, `Students write a ${W.words} word ${W.genre} home, then read each other’s and guess the writer. If you run out of time, finish the writing in Day 3’s first half and do the gallery straight after; move Day 3’s places lesson to Day 4’s second half.`, [
     [`First half: Writing ${W.title.toLowerCase()} (R)(W)`, a1 ? 'a short postcard with past simple, present continuous and *can*.' : 'an informal email with the present perfect, past continuous, a comparison, a plan and linkers.', [
       '**Lead-in (5 min).** "Who do you send messages to at home? What do you tell them?"',
       `**Read the model (10 min).** Students read Sofia’s ${W.genre} and answer the four questions.`,
@@ -578,7 +578,7 @@ function teacherPack(L) {
       '**Kahoot: English culture (10 min).** A closer that sets up Day 5’s culture lesson.',
     ], a1 ? '**Homework:** write a message to a friend at home about Brighton, 40–60 words.' : '**Homework:** write a real email to someone at home about Brighton, 120–150 words.'],
   ]);
-  day('Day 3: Brighton places', 'Students describe where places are, give directions and recommend places to a visitor. **You need:** the classroom screen with Google Maps open on central Brighton. Nothing to print except the role cards.', [
+  day('Day 3 (Wednesday): Brighton places', 'Students describe where places are, give directions and recommend places to a visitor. **You need:** the classroom screen with Google Maps open on central Brighton. Nothing to print except the role cards.', [
     ['First half: Guess the place + big-screen directions (S)(L)', 'prepositions of place and simple directions.', [
       '**Kahoot: Places in Brighton (10 min).** As a warmer.',
       '**Language (5 min).** Board the directions phrases from the *Secret places* sheet.',
@@ -594,7 +594,7 @@ function teacherPack(L) {
       '**Class awards (5 min).** Vote: best place for a rainy day, cheapest day out, most romantic place, best food.',
     ]],
   ]);
-  day('Day 4: Listening and Brighton words', `The listening is a one-speaker voice message (script below, ${LS.length}). Read it aloud yourself, or paste it into Word and use **Review → Read Aloud**.`, [
+  day('Day 4 (Thursday): Listening and Brighton words', `The listening is a one-speaker voice message (script below, ${LS.length}). Read it aloud yourself, or paste it into Word and use **Review → Read Aloud**.`, [
     ['First half: Listening, A Saturday in Brighton (L)(S)', a1 ? 'listening for gist and detail; past simple and *there is / there are*.' : 'listening for gist, detail and inference; narrative tenses.', [
       '**Lead-in (5 min).** "What can you do in Brighton on a Saturday?" Pairs list 5 things in 2 minutes.',
       `**Pre-teach (5 min).** ${a1 ? '*pebbles, seagull, pier, ring, view, toy*' : '*pebbles, seafront, arcade, exhausted, view, expect*'}.`,
@@ -610,7 +610,7 @@ function teacherPack(L) {
       '**Feedback (5 min).** Each group’s best speaker talks in front of the class.',
     ]],
   ]);
-  day('Day 5: English culture and review', 'If Day 5 is a test day, move these to any free slot.', [
+  day('Day 5 (Friday): English culture and review', 'If Day 5 is a test day, move these to any free slot.', [
     ['First half: "Is it true in your country?" four corners (S)', a1 ? 'simple opinions: agree, disagree, same, different.' : 'giving and justifying opinions, agreeing and disagreeing politely, comparing cultures.', [
       '**Recall (5 min).** "What do you remember from Day 2’s Kahoot about English culture?"',
       `**Language (5 min).** ${L.cultureLang}`,
@@ -652,20 +652,22 @@ async function build() {
   const outDir = process.argv[2];
   for (const key of ['c2', 'c3']) {
     const L = LEVELS[key];
-    const sub = `Brighton Skills Week · ${L.course} (${L.level})`;
+    const dir = path.join(outDir, L.dir);
+    fs.mkdirSync(dir, { recursive: true });
+    const sub = `Brighton Skills Week \u00b7 ${L.course} (${L.level})`;
     const sd = new Document({
-      creator: 'Kings Brighton', title: `Brighton Week ${L.file}: Student Pack`, styles, numbering,
+      creator: 'Kings Brighton', title: `Brighton Week ${L.course} (${L.level}): Student Pack`, styles, numbering,
       sections: [
-        { properties: portrait, headers: { default: header(`${sub} · Student pack`) }, footers: { default: footer() }, children: studentPack(L) },
-        { properties: landscape, headers: { default: landscapeHeader(`${sub} · Board game`) }, footers: { default: footer() }, children: boardGame(L) },
+        { properties: portrait, headers: { default: header(`${sub} \u00b7 Student pack`) }, footers: { default: footer() }, children: studentPack(L) },
+        { properties: landscape, headers: { default: landscapeHeader(`${sub} \u00b7 Board game`) }, footers: { default: footer() }, children: boardGame(L) },
       ],
     });
     const td = new Document({
-      creator: 'Kings Brighton', title: `Brighton Week ${L.file}: Teacher Pack`, styles, numbering,
-      sections: [{ properties: portrait, headers: { default: header(`${sub} · Teacher pack`) }, footers: { default: footer() }, children: teacherPack(L) }],
+      creator: 'Kings Brighton', title: `Brighton Week ${L.course} (${L.level}): Teacher Pack`, styles, numbering,
+      sections: [{ properties: portrait, headers: { default: header(`${sub} \u00b7 Teacher pack`) }, footers: { default: footer() }, children: teacherPack(L) }],
     });
-    fs.writeFileSync(path.join(outDir, `Brighton Week ${L.file} - Student Pack.docx`), await Packer.toBuffer(sd));
-    fs.writeFileSync(path.join(outDir, `Brighton Week ${L.file} - Teacher Pack.docx`), await Packer.toBuffer(td));
+    fs.writeFileSync(path.join(dir, `Brighton Week ${L.course} - Student Pack.docx`), await Packer.toBuffer(sd));
+    fs.writeFileSync(path.join(dir, `Brighton Week ${L.course} - Teacher Pack.docx`), await Packer.toBuffer(td));
   }
   console.log('built');
 }

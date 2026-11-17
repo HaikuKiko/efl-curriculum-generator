@@ -1,25 +1,25 @@
 # Brighton Skills Week: two levels
 
-One week (Day 1 to Day 5) of skills lessons about Brighton and English culture,
+One week, Monday to Friday (Day 1 to Day 5), of skills lessons about Brighton and English culture,
 in two levels. Both use the same plan, and the same five Kahoots
 (Brighton Day 1 to Day 5).
 
 Tap a **PDF** to read it here on GitHub. Tap a **Word** file, then the download
 button, to edit or print it.
 
-## Course 2 (A1)
+## Course 2 (A1): [open folder](course-2-A1)
 
 | File | What's in it | Read | Edit |
 | --- | --- | --- | --- |
-| Student Pack | All the worksheets, cards, four corners signs and the board game | [PDF](Brighton%20Week%20Course%202%20(A1)%20-%20Student%20Pack.pdf) | [Word](Brighton%20Week%20Course%202%20(A1)%20-%20Student%20Pack.docx) |
-| Teacher Pack | Week overview, Kahoot links, prep checklist, lesson plans, listening script, answer keys | [PDF](Brighton%20Week%20Course%202%20(A1)%20-%20Teacher%20Pack.pdf) | [Word](Brighton%20Week%20Course%202%20(A1)%20-%20Teacher%20Pack.docx) |
+| Student Pack | All the worksheets, cards, four corners signs and the board game | [PDF](course-2-A1/Brighton%20Week%20Course%202%20-%20Student%20Pack.pdf) | [Word](course-2-A1/Brighton%20Week%20Course%202%20-%20Student%20Pack.docx) |
+| Teacher Pack | Week overview, Kahoot links, prep checklist, lesson plans, listening script, answer keys | [PDF](course-2-A1/Brighton%20Week%20Course%202%20-%20Teacher%20Pack.pdf) | [Word](course-2-A1/Brighton%20Week%20Course%202%20-%20Teacher%20Pack.docx) |
 
-## Course 3 (A2+)
+## Course 3 (A2+): [open folder](course-3-A2-plus)
 
 | File | What's in it | Read | Edit |
 | --- | --- | --- | --- |
-| Student Pack | All the worksheets, cards, four corners signs and the board game | [PDF](Brighton%20Week%20Course%203%20(A2%2B)%20-%20Student%20Pack.pdf) | [Word](Brighton%20Week%20Course%203%20(A2%2B)%20-%20Student%20Pack.docx) |
-| Teacher Pack | Week overview, Kahoot links, prep checklist, lesson plans, listening script, answer keys | [PDF](Brighton%20Week%20Course%203%20(A2%2B)%20-%20Teacher%20Pack.pdf) | [Word](Brighton%20Week%20Course%203%20(A2%2B)%20-%20Teacher%20Pack.docx) |
+| Student Pack | All the worksheets, cards, four corners signs and the board game | [PDF](course-3-A2-plus/Brighton%20Week%20Course%203%20-%20Student%20Pack.pdf) | [Word](course-3-A2-plus/Brighton%20Week%20Course%203%20-%20Student%20Pack.docx) |
+| Teacher Pack | Week overview, Kahoot links, prep checklist, lesson plans, listening script, answer keys | [PDF](course-3-A2-plus/Brighton%20Week%20Course%203%20-%20Teacher%20Pack.pdf) | [Word](course-3-A2-plus/Brighton%20Week%20Course%203%20-%20Teacher%20Pack.docx) |
 
 ## What changes between the levels
 
