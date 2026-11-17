@@ -1,12 +1,14 @@
-# Ghosts (BBC) Series 1: six TV lessons (example output)
+# Ghosts (BBC) Series 1: six TV lessons (strong A1 to A2, ages 16-22)
 
-Six 45-minute lessons for a strong A1 to A2 class (ages 16-22), one per episode of
-the BBC sitcom *Ghosts*, Series 1 (on BBC iPlayer).
+Tap a **PDF** to read it here on GitHub. Tap a **Word** file, then the download
+button, to edit or print it.
 
-- `Ghosts - Student Worksheets.docx`: character cards, then two pages per episode
-  (before and while you watch; after you watch).
-- `Ghosts - Teacher Pack.docx`: lesson plan, Kahoot links, answer keys.
-- `build-packs.js`: builds both files: `node build-packs.js <out-folder> kings-logo.png`
+| File | What's in it | Read | Edit |
+| --- | --- | --- | --- |
+| Student Worksheets | Meet the characters, then 2 pages per episode: words, guess, while you watch / after you watch | [PDF](Ghosts%20-%20Student%20Worksheets.pdf) | [Word](Ghosts%20-%20Student%20Worksheets.docx) |
+| Teacher Pack | 45-minute lesson plan, Kahoot links (10 questions each), answer keys for all 6 episodes | [PDF](Ghosts%20-%20Teacher%20Pack.pdf) | [Word](Ghosts%20-%20Teacher%20Pack.docx) |
 
 Written from published episode guides, not from watching the episodes, so check
 the questions against each episode before class.
+
+`build-packs.js` rebuilds both Word files: `node build-packs.js <out-folder> kings-logo.png`

@@ -1,14 +1,11 @@
-# Brighton Skills Week (example output)
+# Brighton Skills Week (2A Elementary, A1+ to A2)
 
-Hand-made first output for a 2A Elementary class (A1+ to A2). It's the model for
-what the generator should produce.
+Tap a **PDF** to read it here on GitHub. Tap a **Word** file, then the download
+button, to edit or print it.
 
-- `Brighton Week - Student Pack.docx`: worksheets, cut-up cards, four corners
-  signs and the board game. No answers. Kings Brighton logo in the header.
-- `Brighton Week - Teacher Pack.docx`: week overview, Kahoot links, lesson
-  plans, listening script and answer keys.
-- `build-packs.js`: the script that builds both files with the `docx` npm package:
+| File | What's in it | Read | Edit |
+| --- | --- | --- | --- |
+| Student Pack | All the **worksheets**: find someone who, true or false, interview, postcard model and frame, secret places, tourist role cards, listening tasks, bingo, Just a minute cards, four corners signs, board game | [PDF](Brighton%20Week%20-%20Student%20Pack.pdf) | [Word](Brighton%20Week%20-%20Student%20Pack.docx) |
+| Teacher Pack | Week overview, Kahoot links, prep checklist, lesson plans for each day, listening script, **answer keys** | [PDF](Brighton%20Week%20-%20Teacher%20Pack.pdf) | [Word](Brighton%20Week%20-%20Teacher%20Pack.docx) |
 
-  ```bash
-  node build-packs.js <output-folder> kings-logo.png
-  ```
+`build-packs.js` rebuilds both Word files: `node build-packs.js <out-folder> kings-logo.png`
