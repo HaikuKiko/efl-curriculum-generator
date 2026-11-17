@@ -1,11 +1,33 @@
-# Brighton Skills Week (2A Elementary, A1+ to A2)
+# Brighton Skills Week: two levels
+
+One week (Day 1 to Day 5) of skills lessons about Brighton and English culture,
+in two levels. Both use the same plan, and the same five Kahoots
+(Brighton Day 1 to Day 5).
 
 Tap a **PDF** to read it here on GitHub. Tap a **Word** file, then the download
 button, to edit or print it.
 
+## Course 2 (A1)
+
 | File | What's in it | Read | Edit |
 | --- | --- | --- | --- |
-| Student Pack | All the **worksheets**: find someone who, true or false, interview, postcard model and frame, secret places, tourist role cards, listening tasks, bingo, Just a minute cards, four corners signs, board game | [PDF](Brighton%20Week%20-%20Student%20Pack.pdf) | [Word](Brighton%20Week%20-%20Student%20Pack.docx) |
-| Teacher Pack | Week overview, Kahoot links, prep checklist, lesson plans for each day, listening script, **answer keys** | [PDF](Brighton%20Week%20-%20Teacher%20Pack.pdf) | [Word](Brighton%20Week%20-%20Teacher%20Pack.docx) |
+| Student Pack | All the worksheets, cards, four corners signs and the board game | [PDF](Brighton%20Week%20Course%202%20(A1)%20-%20Student%20Pack.pdf) | [Word](Brighton%20Week%20Course%202%20(A1)%20-%20Student%20Pack.docx) |
+| Teacher Pack | Week overview, Kahoot links, prep checklist, lesson plans, listening script, answer keys | [PDF](Brighton%20Week%20Course%202%20(A1)%20-%20Teacher%20Pack.pdf) | [Word](Brighton%20Week%20Course%202%20(A1)%20-%20Teacher%20Pack.docx) |
 
-`build-packs.js` rebuilds both Word files: `node build-packs.js <out-folder> kings-logo.png`
+## Course 3 (A2+)
+
+| File | What's in it | Read | Edit |
+| --- | --- | --- | --- |
+| Student Pack | All the worksheets, cards, four corners signs and the board game | [PDF](Brighton%20Week%20Course%203%20(A2%2B)%20-%20Student%20Pack.pdf) | [Word](Brighton%20Week%20Course%203%20(A2%2B)%20-%20Student%20Pack.docx) |
+| Teacher Pack | Week overview, Kahoot links, prep checklist, lesson plans, listening script, answer keys | [PDF](Brighton%20Week%20Course%203%20(A2%2B)%20-%20Teacher%20Pack.pdf) | [Word](Brighton%20Week%20Course%203%20(A2%2B)%20-%20Teacher%20Pack.docx) |
+
+## What changes between the levels
+
+| | Course 2 (A1) | Course 3 (A2+) |
+| --- | --- | --- |
+| Grammar review | be, present simple, can, there is/are, past simple, want to | present perfect, past continuous, comparatives, going to/will, should, conditionals |
+| Writing (Day 2) | Postcard, 40-60 words | Email home, 100-130 words, with linkers |
+| Listening (Day 4) | About 60 seconds, simple sentences, gap fill | About 2 minutes, more detail, open questions |
+| Speaking | Simple questions, 30-second talks, 10-second board game turns | Follow-up questions, 60-second talks, opinions, 30-second turns |
+
+`build-packs.js` rebuilds all four Word files: `node build-packs.js <out-folder> kings-logo.png`
