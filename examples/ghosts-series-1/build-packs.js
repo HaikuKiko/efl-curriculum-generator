@@ -348,10 +348,10 @@ function teacherPack() {
     '**Guess (2 min).** Read *The story* box together and ask the guess question.',
     '**Watch (28 min).** Students answer the *While you watch* questions. Optional: pause at about the halfway point to check questions 1–2.',
     '**After (5 min).** True or false and the two questions, in pairs.',
-    '**Kahoot or speaking (5 min).** Run the episode’s 6-question Kahoot, or use the *Talk to your partner* question. Give the other as homework.',
+    '**Kahoot or speaking (5 min).** Run the episode’s 10-question Kahoot (story + key words), or use the *Talk to your partner* question. Give the other as homework.',
   ]));
   t.push(H2('Kahoots'));
-  t.push(P('One 6-question Kahoot per episode. These links open each kahoot’s page (press **Start** to host, or **Duplicate** to copy it). They work for colleagues once the kahoots are set to public.'));
+  t.push(P('One 10-question Kahoot (story + key words) per episode. These links open each kahoot’s page (press **Start** to host, or **Duplicate** to copy it). They work for colleagues once the kahoots are set to public.'));
   t.push(new Table({
     width: { size: PORTRAIT_W, type: WidthType.DXA }, columnWidths: [1500, 4000, 4406],
     rows: [
