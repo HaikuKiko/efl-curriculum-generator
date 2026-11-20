@@ -53,6 +53,6 @@ They're listed in each course's **00 Overview and Kahoots**, and on the **[Kahoo
 
 New Year's resolutions vocabulary · New Year plans: going to, will, want to ·
 Brighton: places · Brighton: basics · Brighton: English culture ·
-Brighton & New Year: big review. Links are in each course's 00 Overview.
+Brighton & New Year: big review. Links are in each course's 00 Overview and Kahoots.
 
 `build-packets.js` rebuilds every Word file: `node build-packets.js <out-folder> kings-logo.png`
