@@ -597,7 +597,7 @@ const ACTIVITIES = [
 
 function overview(L) {
   const o = [];
-  o.push(new Paragraph({ heading: 'Heading1', children: [new TextRun(`New Year in Brighton: ${L.course} (${L.level})`)] }));
+  o.push(new Paragraph({ heading: 'Heading1', children: [new TextRun(`Overview and Kahoots: ${L.course} (${L.level})`)] }));
   o.push(P('Eleven speaking activities for the start of the year: New Year’s resolutions and what students are going to do in Brighton. Use them in any order and fit them into your week where you like.'));
   o.push(P(`**Language:** ${L.future}.`));
   o.push(H2('How the packets work'));
@@ -609,12 +609,12 @@ function overview(L) {
   o.push(H2('The activities'));
   o.push(table([['#', 'Activity', 'Time', 'Answers?'], ...ACTIVITIES.map((a) => [a.num, a.title(L), a.time(L), a.answers ? 'Yes (red)' : '—'])], [700, 5300, 2200, 1706], { header: true }));
   o.push(H2('Kahoots (shared by Course 2 and Course 3)'));
-  o.push(P('Each link opens the kahoot’s page: press **Start** to host, or **Duplicate** to copy it into your account. They work once the kahoots are set to public.'));
+  o.push(P('**Click a Kahoot name to open it**, then press **Start** to play it with your class, or **Duplicate** to copy it into your account.'));
   o.push(new Table({
-    width: { size: PORTRAIT_W, type: WidthType.DXA }, columnWidths: [4000, 3200, 2706],
+    width: { size: PORTRAIT_W, type: WidthType.DXA }, columnWidths: [5400, 4506],
     rows: [
-      new TableRow({ tableHeader: true, children: ['Kahoot', 'Good with', 'Link'].map((h, i) => cell(h, [4000, 3200, 2706][i], { fill: PURPLE, run: { bold: true, color: 'FFFFFF' } })) }),
-      ...KAHOOTS.map(([n, g, u]) => new TableRow({ children: [cell(n, 4000), cell(g, 3200), cell([new Paragraph({ children: [new ExternalHyperlink({ link: `https://create.kahoot.it/details/${u}`, children: [new TextRun({ text: 'Open the kahoot', style: 'Hyperlink' })] })] })], 2706)] })),
+      new TableRow({ tableHeader: true, children: ['Kahoot (click to open)', 'Use it with'].map((h, i) => cell(h, [5400, 4506][i], { fill: PURPLE, run: { bold: true, color: 'FFFFFF' } })) }),
+      ...KAHOOTS.map(([n, g, u]) => new TableRow({ children: [cell([new Paragraph({ children: [new ExternalHyperlink({ link: `https://create.kahoot.it/details/${u}`, children: [new TextRun({ text: n, style: 'Hyperlink', bold: true })] })] })], 5400), cell(g, 4506)] })),
     ],
   }));
   o.push(H2('Low prep'));
@@ -635,7 +635,7 @@ async function build() {
       const doc = new Document({ creator: 'Kings Brighton', title: name, styles, numbering, sections });
       fs.writeFileSync(path.join(dir, `${name}.docx`), await Packer.toBuffer(doc));
     };
-    await save('00 Overview', [pSec(overview(L))]);
+    await save('00 Overview and Kahoots', [pSec(overview(L))]);
     for (const a of ACTIVITIES) {
       const mk = (ans) => a.landscape ? [pSec(teacherNotes(L, a)), lSec(a.student(L, ans))] : [pSec([...teacherNotes(L, a), ...a.student(L, ans)])];
       await save(`${a.num} ${a.file}`, mk(false));

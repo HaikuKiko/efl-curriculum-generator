@@ -7,7 +7,7 @@ activities in any order.
 **How each packet works:** print the whole file. The **first page is the
 teacher notes** (time, prep, steps, ideas); the pages after it are for
 students. Files ending in **ANSWERS** are the same pages with the answers in
-**red**. Start with **00 Overview** for the activity menu and Kahoot links.
+**red**. Start with **00 Overview and Kahoots**: the activity menu and the Kahoot links.
 
 Tap **PDF** to read on GitHub; tap **Word** then download to edit or print.
 
@@ -15,8 +15,7 @@ Tap **PDF** to read on GitHub; tap **Word** then download to edit or print.
 
 | Packet | Read | Edit |
 | --- | --- | --- |
-| **Kahoots** | [Open the Kahoots page](KAHOOTS.md) | [Word](course-2-A1/Kahoots.docx) |
-| 00 Overview | [PDF](course-2-A1/00%20Overview.pdf) | [Word](course-2-A1/00%20Overview.docx) |
+| 00 Overview and Kahoots | [PDF](course-2-A1/00%20Overview%20and%20Kahoots.pdf) | [Word](course-2-A1/00%20Overview%20and%20Kahoots.docx) |
 | 01 Find someone who | [PDF](course-2-A1/01%20Find%20someone%20who.pdf) | [Word](course-2-A1/01%20Find%20someone%20who.docx) |
 | 02 Two truths and a lie | [PDF](course-2-A1/02%20Two%20truths%20and%20a%20lie.pdf) | [Word](course-2-A1/02%20Two%20truths%20and%20a%20lie.docx) |
 | 03 Interview my year in Brighton | [PDF](course-2-A1/03%20Interview%20my%20year%20in%20Brighton.pdf) | [Word](course-2-A1/03%20Interview%20my%20year%20in%20Brighton.docx) |
@@ -34,8 +33,7 @@ Tap **PDF** to read on GitHub; tap **Word** then download to edit or print.
 
 | Packet | Read | Edit |
 | --- | --- | --- |
-| **Kahoots** | [Open the Kahoots page](KAHOOTS.md) | [Word](course-3-A2-plus/Kahoots.docx) |
-| 00 Overview | [PDF](course-3-A2-plus/00%20Overview.pdf) | [Word](course-3-A2-plus/00%20Overview.docx) |
+| 00 Overview and Kahoots | [PDF](course-3-A2-plus/00%20Overview%20and%20Kahoots.pdf) | [Word](course-3-A2-plus/00%20Overview%20and%20Kahoots.docx) |
 | 01 Find someone who | [PDF](course-3-A2-plus/01%20Find%20someone%20who.pdf) | [Word](course-3-A2-plus/01%20Find%20someone%20who.docx) |
 | 02 Two truths and a lie | [PDF](course-3-A2-plus/02%20Two%20truths%20and%20a%20lie.pdf) | [Word](course-3-A2-plus/02%20Two%20truths%20and%20a%20lie.docx) |
 | 03 Interview my year in Brighton | [PDF](course-3-A2-plus/03%20Interview%20my%20year%20in%20Brighton.pdf) | [Word](course-3-A2-plus/03%20Interview%20my%20year%20in%20Brighton.docx) |
@@ -51,7 +49,7 @@ Tap **PDF** to read on GitHub; tap **Word** then download to edit or print.
 
 ## Kahoots (shared by both courses)
 
-**[Open the Kahoots page](KAHOOTS.md)**: click a Kahoot name to open it.
+They're listed in each course's **00 Overview and Kahoots**, and on the **[Kahoots page](KAHOOTS.md)** here on GitHub (click a name to open it).
 
 New Year's resolutions vocabulary · New Year plans: going to, will, want to ·
 Brighton: places · Brighton: basics · Brighton: English culture ·
