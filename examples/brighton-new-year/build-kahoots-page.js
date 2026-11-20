@@ -4,7 +4,7 @@ async function buildKahoots() {
     const L = LEVELS[key];
     const dir = path.join(outDir, L.dir);
     fs.mkdirSync(dir, { recursive: true });
-    const W = [3800, 3000, 3106];
+    const W = [5400, 4506];
     const kids = [
       new Paragraph({ heading: 'Heading1', children: [new TextRun('Kahoots: New Year in Brighton')] }),
       P(`${L.course} (${L.level}). These six Kahoots are shared by Course 2 and Course 3.`),
@@ -12,10 +12,10 @@ async function buildKahoots() {
       new Table({
         width: { size: PORTRAIT_W, type: WidthType.DXA }, columnWidths: W,
         rows: [
-          new TableRow({ tableHeader: true, children: ['Kahoot', 'Use it with', 'Link'].map((h, i) => cell(h, W[i], { fill: PURPLE, run: { bold: true, color: 'FFFFFF' } })) }),
+          new TableRow({ tableHeader: true, children: ['Kahoot (click to open)', 'Use it with'].map((h, i) => cell(h, W[i], { fill: PURPLE, run: { bold: true, color: 'FFFFFF' } })) }),
           ...KAHOOTS.map(([n, g, u]) => new TableRow({ height: { value: 700, rule: HeightRule.ATLEAST }, children: [
-            cell(`**${n}**`, W[0]), cell(g, W[1]),
-            cell([new Paragraph({ children: [new ExternalHyperlink({ link: `https://create.kahoot.it/details/${u}`, children: [new TextRun({ text: `create.kahoot.it/details/${u.slice(0, 8)}…`, style: 'Hyperlink' })] })] })], W[2])] })),
+            cell([new Paragraph({ children: [new ExternalHyperlink({ link: `https://create.kahoot.it/details/${u}`, children: [new TextRun({ text: n, style: 'Hyperlink', bold: true })] })] })], W[0]),
+            cell(g, W[1])] })),
         ],
       }),
     ];

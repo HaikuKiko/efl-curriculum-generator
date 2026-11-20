@@ -15,7 +15,7 @@ Tap **PDF** to read on GitHub; tap **Word** then download to edit or print.
 
 | Packet | Read | Edit |
 | --- | --- | --- |
-| Kahoots | [PDF](course-2-A1/Kahoots.pdf) | [Word](course-2-A1/Kahoots.docx) |
+| **Kahoots** | [Open the Kahoots page](KAHOOTS.md) | [Word](course-2-A1/Kahoots.docx) |
 | 00 Overview | [PDF](course-2-A1/00%20Overview.pdf) | [Word](course-2-A1/00%20Overview.docx) |
 | 01 Find someone who | [PDF](course-2-A1/01%20Find%20someone%20who.pdf) | [Word](course-2-A1/01%20Find%20someone%20who.docx) |
 | 02 Two truths and a lie | [PDF](course-2-A1/02%20Two%20truths%20and%20a%20lie.pdf) | [Word](course-2-A1/02%20Two%20truths%20and%20a%20lie.docx) |
@@ -34,7 +34,7 @@ Tap **PDF** to read on GitHub; tap **Word** then download to edit or print.
 
 | Packet | Read | Edit |
 | --- | --- | --- |
-| Kahoots | [PDF](course-3-A2-plus/Kahoots.pdf) | [Word](course-3-A2-plus/Kahoots.docx) |
+| **Kahoots** | [Open the Kahoots page](KAHOOTS.md) | [Word](course-3-A2-plus/Kahoots.docx) |
 | 00 Overview | [PDF](course-3-A2-plus/00%20Overview.pdf) | [Word](course-3-A2-plus/00%20Overview.docx) |
 | 01 Find someone who | [PDF](course-3-A2-plus/01%20Find%20someone%20who.pdf) | [Word](course-3-A2-plus/01%20Find%20someone%20who.docx) |
 | 02 Two truths and a lie | [PDF](course-3-A2-plus/02%20Two%20truths%20and%20a%20lie.pdf) | [Word](course-3-A2-plus/02%20Two%20truths%20and%20a%20lie.docx) |
@@ -51,7 +51,7 @@ Tap **PDF** to read on GitHub; tap **Word** then download to edit or print.
 
 ## Kahoots (shared by both courses)
 
-**[Open the Kahoots page](KAHOOTS.md)** for all the links. Each course folder also has a printable **Kahoots** page.
+**[Open the Kahoots page](KAHOOTS.md)**: click a Kahoot name to open it.
 
 New Year's resolutions vocabulary · New Year plans: going to, will, want to ·
 Brighton: places · Brighton: basics · Brighton: English culture ·
