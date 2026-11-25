@@ -5,16 +5,13 @@ episode. Level: A2.
 
 ## Slides (show on the board)
 
-**[Atlantis Episodes 1-3 - Before You Watch (PowerPoint)](Atlantis%20Episodes%201-3%20-%20Before%20You%20Watch.pptx)**
-(or the [PDF preview](Atlantis%20Episodes%201-3%20-%20Before%20You%20Watch.pdf))
+One PowerPoint per episode. Answers are in the speaker notes.
 
-One section per episode. Answers are in the speaker notes.
-
-| Episode | Slides |
-| --- | --- |
-| 1: The Earth Bull | Meet the characters (8 characters on 2 slides), Who is it? quiz, 8 key words, talk questions |
-| 2: A Girl by Any Other Name | Remember episode 1, 8 key words, think and talk (introduces Medusa) |
-| 3: A Boy of No Consequence | Remember episode 2, 8 key words, think and talk |
+| Episode | Slides | Open |
+| --- | --- | --- |
+| 1: The Earth Bull | Meet the characters (8 characters on 2 slides), Who is it? quiz, 8 key words, talk questions | [PowerPoint](Atlantis%20Episode%201%20-%20Before%20You%20Watch.pptx) · [PDF](Atlantis%20Episode%201%20-%20Before%20You%20Watch.pdf) |
+| 2: A Girl by Any Other Name | Remember episode 1, 8 key words, think and talk (introduces Medusa) | [PowerPoint](Atlantis%20Episode%202%20-%20Before%20You%20Watch.pptx) · [PDF](Atlantis%20Episode%202%20-%20Before%20You%20Watch.pdf) |
+| 3: A Boy of No Consequence | Remember episode 2, 8 key words, think and talk | [PowerPoint](Atlantis%20Episode%203%20-%20Before%20You%20Watch.pptx) · [PDF](Atlantis%20Episode%203%20-%20Before%20You%20Watch.pdf) |
 
 ## Kahoots (after watching)
 
@@ -29,5 +26,5 @@ Click a name to open it, then press **Start** to play.
 The questions were written from published episode guides, not from watching
 the episodes, so check them against each episode before class.
 
-`build-deck.js` rebuilds the slides (needs `pptxgenjs`, `react`, `react-dom`,
+`build-deck.js` rebuilds one episode's slides (`node build-deck.js <out.pptx> <apply_theme.js> <episode number>`) (needs `pptxgenjs`, `react`, `react-dom`,
 `react-icons` and `sharp`).

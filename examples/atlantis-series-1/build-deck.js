@@ -5,6 +5,7 @@ const ReactDOMServer = require('react-dom/server');
 const sharp = require('sharp');
 const gi = require('react-icons/gi');
 const { applyTheme } = require(process.argv[3]);
+const EP = Number(process.argv[4]);
 
 const THEME = {
   name: 'Atlantis Aegean', headFontFace: 'Cambria', bodyFontFace: 'Calibri',
@@ -23,7 +24,7 @@ async function icon(name, color, px = 256) {
   const pres = new pptxgen();
   pres.layout = 'LAYOUT_WIDE'; // 13.33 x 7.5
   pres.theme = { headFontFace: THEME.headFontFace, bodyFontFace: THEME.bodyFontFace };
-  pres.title = 'Atlantis episodes 1-3: before you watch';
+  pres.title = `Atlantis episode ${EP}: before you watch`;
   const C = pres.SchemeColor;
 
   pres.defineSlideMaster({
@@ -99,6 +100,7 @@ async function icon(name, color, px = 256) {
   };
 
   // ---------- Episode 1 ----------
+  if (EP === 1) {
   const E1 = 'Episode 1';
   await titleSlide(E1, 'Episode 1: The Earth Bull', 'Before you watch: meet the characters', 'GiGreekTemple');
   await characterSlide(E1, 'Meet the characters', [
@@ -127,7 +129,9 @@ async function icon(name, color, px = 256) {
     'Jason comes from our time. What will be strange for him?', 'Would you like to be a hero? Why? Why not?',
   ], 'GiTalk', 'Pair work, 3–5 minutes, then share a few ideas with the class.');
 
+  }
   // ---------- Episode 2 ----------
+  if (EP === 2) {
   const E2 = 'Episode 2';
   await titleSlide(E2, 'Episode 2: A Girl by Any Other Name', 'Before you watch', 'GiForest');
   await questionSlide(E2, 'Remember episode 1?', [
@@ -145,7 +149,9 @@ async function icon(name, color, px = 256) {
     'In the old Greek stories, Medusa has snakes for hair. Can you guess her story in this episode?',
   ], 'GiMedusaHead', 'Introduce Medusa: a new character in this episode. Don’t confirm guesses; check after watching.');
 
+  }
   // ---------- Episode 3 ----------
+  if (EP === 3) {
   const E3 = 'Episode 3';
   await titleSlide(E3, 'Episode 3: A Boy of No Consequence', 'Before you watch', 'GiBull');
   await questionSlide(E3, 'Remember episode 2?', [
@@ -162,6 +168,7 @@ async function icon(name, color, px = 256) {
     'What happens to people who break the law in your country?',
   ], 'GiBull', 'Bull leaping was a real sport in ancient Crete (Minoan wall paintings show it).');
 
+  }
   await pres.writeFile({ fileName: process.argv[2] });
   await applyTheme(process.argv[2], THEME);
   console.log('written', process.argv[2]);
